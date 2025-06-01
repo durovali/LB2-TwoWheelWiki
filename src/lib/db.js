@@ -41,18 +41,18 @@ async function getBike(id) {
   try {
     const collection = db.collection("bikes");
     const query = { _id: new ObjectId(id) };
-    movie = await collection.findOne(query);
+    bike = await collection.findOne(query);
 
-    if (!movie) {
-      console.log("No movie with id " + id);
+    if (!bike) {
+      console.log("No bike with id " + id);
       
     } else {
-      movie._id = movie._id.toString();
+      bike._id = bike._id.toString();
     }
   } catch (error) {
     console.log(error.message);
   }
-  return movie;
+  return bike;
 }
 
 async function getManufacturers() {
