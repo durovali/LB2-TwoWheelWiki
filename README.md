@@ -1,38 +1,20 @@
-# sv
+# TwoWheelWiki
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+TwoWheelWiki is a SvelteKit-based web application that provides an overview of motorcycles, their specifications, parts, manufacturers, and riding tips.
 
-## Creating a project
+The project is currently in development and contains example data for testing.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Features
 
-```bash
-# create a new project in the current directory
-npx sv create
+- Browse motorcycle models and manufacturers  
+- View detailed bike specifications and parts  
+- Explore riding tips and safety information  
+- Simple and responsive UI built with SvelteKit and Bootstrap
 
-# create a new project in my-app
-npx sv create my-app
-```
+## Development
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies and start the development server:
 
 ```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
