@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "tip": "Keep a relaxed grip on the handlebars",
+    "manoeuver": "Basic handling",
+    "experience_level": "Beginner",
+    "maintenance_tips": "Regularly check handlebar alignment and grips",
+    "safety_gear": "Helmet, Gloves",
+    "description": "Many new riders tend to grip the handlebars too tightly, which can lead to fatigue and reduced control. Keeping a light, relaxed grip allows the motorcycle to move naturally and improves stability."
+  },
+  {
+    "id": 2,
+    "tip": "Practice emergency braking",
+    "manoeuver": "Emergency braking",
+    "experience_level": "Intermediate",
+    "maintenance_tips": "Inspect brake pads and fluid regularly",
+    "safety_gear": "Helmet, Gloves, Jacket, Boots",
+    "description": "Emergency braking can save lives. Practice applying both brakes progressively and smoothly to stop quickly without locking the wheels. Do this in a safe environment to build muscle memory."
+  },
+  {
+    "id": 3,
+    "tip": "Counter-steering for smooth cornering",
+    "manoeuver": "Cornering",
+    "experience_level": "Intermediate",
+    "maintenance_tips": "Check tire pressure and tread before rides",
+    "safety_gear": "Helmet, Gloves, Jacket",
+    "description": "Counter-steering helps you initiate turns effectively, especially at higher speeds. Push the handlebar gently in the direction opposite to where you want to turn, and the bike will lean smoothly into the corner."
+  },
+  {
+    "id": 4,
+    "tip": "Look where you want to go",
+    "manoeuver": "Vision and balance",
+    "experience_level": "Beginner",
+    "maintenance_tips": "Clean visor or goggles before each ride",
+    "safety_gear": "Helmet, Gloves",
+    "description": "Your motorcycle tends to follow your eyes. Always look through the turn to where you want to go — this improves balance, smoothness, and helps avoid obstacles."
+  },
+  {
+    "id": 5,
+    "tip": "Slow in, fast out in corners",
+    "manoeuver": "Cornering technique",
+    "experience_level": "Advanced",
+    "maintenance_tips": "Inspect suspension settings regularly",
+    "safety_gear": "Full gear: Helmet, Gloves, Jacket, Pants, Boots",
+    "description": "Entering corners too fast is a common cause of accidents. Approach at a safe speed, then gradually accelerate as you exit the corner. This ensures maximum grip and stability."
+  },
+  {
+    "id": 6,
+    "tip": "Practice slow-speed maneuvers",
+    "manoeuver": "Low-speed control",
+    "experience_level": "Beginner",
+    "maintenance_tips": "Lubricate clutch cable regularly",
+    "safety_gear": "Helmet, Gloves, Boots",
+    "description": "Mastering slow-speed riding improves your control in traffic, parking lots, and tight spaces. Practice using the clutch and rear brake to balance the bike at low speeds."
+  },
+  {
+    "id": 7,
+    "tip": "Maintain proper body position when braking",
+    "manoeuver": "Braking technique",
+    "experience_level": "Intermediate",
+    "maintenance_tips": "Check front fork seals for leaks",
+    "safety_gear": "Helmet, Gloves, Jacket",
+    "description": "When braking hard, keep your body upright and apply pressure on the tank with your knees to maintain stability. Avoid shifting too much weight forward to prevent unsettling the bike."
+  },
+  {
+    "id": 8,
+    "tip": "Use both brakes smoothly",
+    "manoeuver": "Braking control",
+    "experience_level": "Beginner",
+    "maintenance_tips": "Inspect brake discs for wear",
+    "safety_gear": "Helmet, Gloves, Jacket, Boots",
+    "description": "For safe and effective stopping, use both the front and rear brakes smoothly. This helps distribute braking force and maintains better control, especially on slippery surfaces."
+  },
+  {
+    "id": 9,
+    "tip": "Check chain slack and lubrication",
+    "manoeuver": "Maintenance",
+    "experience_level": "All levels",
+    "maintenance_tips": "Lubricate chain every 500 km",
+    "safety_gear": "Gloves, Eye protection",
+    "description": "A properly maintained chain improves performance and reduces wear. Check slack and adjust as needed, and lubricate the chain every few rides or after wet weather."
+  },
+  {
+    "id": 10,
+    "tip": "Inspect tires before each ride",
+    "manoeuver": "Pre-ride inspection",
+    "experience_level": "All levels",
+    "maintenance_tips": "Check tire pressure and tread depth",
+    "safety_gear": "Gloves, Eye protection",
+    "description": "Tires are critical for safety. Inspect them for damage, cracks, correct air pressure, and sufficient tread depth before every ride to ensure optimal grip and performance."
+  }
+]

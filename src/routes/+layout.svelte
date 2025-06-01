@@ -22,8 +22,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/bikes">Bikes</a></li>
         <li><a class="nav-link active" aria-current="page" href="/manufacturers">Manufacturers</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/bikes">Bikes</a></li>
+        <li><a class="nav-link active" aria-current="page" href="/specs">Specs</a></li>
         <li><a class="nav-link active" aria-current="page" href="/riding_tips">Riding Tips</a></li>
       </ul>
     </div>

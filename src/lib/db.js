@@ -4,27 +4,43 @@ import { DB_URI } from "$env/static/private";
 const client = new MongoClient(DB_URI);
 
 await client.connect();
-const db = client.db("ScreenStackDB"); 
+const db = client.db("TwoWheelWiki"); 
 
-async function getMovies() {
-  let movies = [];
+async function getSpecs() {
+  let specs = [];
   try {
-    const collection = db.collection("movies");
+    const collection = db.collection("specs");
     const query = {};
-    movies = await collection.find(query).toArray();
-    movies.forEach((movie) => {
-      movie._id = movie._id.toString(); 
+    specs = await collection.find(query).toArray();
+    specs.forEach((spec) => {
+      spec._id = spec._id.toString(); 
     });
   } catch (error) {
     console.log(error);
   }
-  return movies;
+  return specs;
 }
 
-async function getMovie(id) {
-  let movie = null;
+
+async function getBikes() {
+  let bikes = [];
   try {
-    const collection = db.collection("movies");
+    const collection = db.collection("bikes");
+    const query = {};
+    bikes = await collection.find(query).toArray();
+    bikes.forEach((bike) => {
+      bike._id = bike._id.toString(); 
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  return bikes;
+}
+
+async function getBike(id) {
+  let bike = null;
+  try {
+    const collection = db.collection("bikes");
     const query = { _id: new ObjectId(id) };
     movie = await collection.findOne(query);
 
@@ -94,9 +110,7 @@ async function deleteMovie(id) {
 }
 
 export default {
-  getMovies,
-  getMovie,
-  createMovie,
-  updateMovie,
-  deleteMovie,
+  getSpecs,
+  getBikes,
+  getBike,
 };
