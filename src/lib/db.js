@@ -21,7 +21,6 @@ async function getSpecs() {
   return specs;
 }
 
-
 async function getBikes() {
   let bikes = [];
   try {
@@ -56,54 +55,42 @@ async function getBike(id) {
   return movie;
 }
 
-async function createMovie(movie) {
-  movie.poster = "/images/placeholder.jpg";
-  movie.actors = [];
-  movie.watchlist = false;
+async function getManufacturers() {
+  let manufacturers = [];
   try {
-    const collection = db.collection("movies");
-    const result = await collection.insertOne(movie);
+    const collection = db.collection("manufacturers");
+    const query = {};
+    manufacturers = await collection.find(query).toArray();
+    manufacturers.forEach((manufacturer) => {
+      manufacturer._id = manufacturer._id.toString(); 
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  return manufacturers;
+}
+
+async function getTips() {
+  let tips = [];
+  try {
+    const collection = db.collection("riding_tips");
+    const query = {};
+    tips = await collection.find(query).toArray();
+    tips.forEach((tip) => {
+      tip._id = tip._id.toString(); 
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  return tips;
+}
+
+async function createTip(tip) {
+  try {
+    const collection = db.collection("riding_tips");
+    const result = await collection.insertOne(tip);
     return result.insertedId.toString();
   } catch (error) {
-    console.log(error.message);
-  }
-  return null;
-}
-
-async function updateMovie(movie) {
-  try {
-    let id = movie._id;
-    delete movie._id; 
-    const collection = db.collection("movies");
-    const query = { _id: new ObjectId(id) };
-    const result = await collection.updateOne(query, { $set: movie });
-
-    if (result.matchedCount === 0) {
-      console.log("No movie with id " + id);
-    } else {
-      console.log("Movie with id " + id + " has been updated.");
-      return id;
-    }
-  } catch (error) {
-    console.log(error.message);
-  }
-  return null;
-}
-
-async function deleteMovie(id) {
-  try {
-    const collection = db.collection("movies");
-    const query = { _id: new ObjectId(id) };
-    const result = await collection.deleteOne(query);
-
-    if (result.deletedCount === 0) {
-      console.log("No movie with id " + id);
-    } else {
-      console.log("Movie with id " + id + " has been successfully deleted.");
-      return id;
-    }
-  } catch (error) {
-    // TODO: errorhandling
     console.log(error.message);
   }
   return null;
@@ -113,4 +100,7 @@ export default {
   getSpecs,
   getBikes,
   getBike,
+  getManufacturers,
+  getTips,
+  createTip,
 };
