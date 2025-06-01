@@ -15,7 +15,7 @@
       </div>
     {/each}
   {:else}
-    <p>Keine Tips gefunden.</p>
+    <p>No Tips found.</p>
   {/if}
 </div>
 

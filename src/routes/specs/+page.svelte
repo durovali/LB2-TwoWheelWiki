@@ -13,25 +13,27 @@
     }
 </script>
 
-<h1>Specs</h1>
-<div>
-    <img src="/images/bike_specs.png" alt="bike_specs" />
+<div class="container">
+    <h1>Specs</h1>
+    <div>
+        <img src="/images/bike_specs.png" alt="bike_specs" />
 
-    <div class="d-flex flex-wrap gap-2">
-        {#each specs as spec}
-            <button
-                type="button"
-                class="btn spec-btn"
-                on:click={() => onClick(spec)}
-            >
-                {spec.id}
-            </button>
-        {/each}
+        <div class="d-flex flex-wrap gap-2">
+            {#each specs as spec}
+                <button
+                    type="button"
+                    class="btn spec-btn"
+                    on:click={() => onClick(spec)}
+                >
+                    {spec.id}
+                </button>
+            {/each}
+        </div>
+
+        {#if specToDisplay}
+            <Spec spec={specToDisplay} />
+        {:else}
+            <p>Please click a button to view details about a part.</p>
+        {/if}
     </div>
-
-    {#if specToDisplay}
-        <Spec spec={specToDisplay} />
-    {:else}
-        <p>Please click a button to view details about a part.</p>
-    {/if}
 </div>
