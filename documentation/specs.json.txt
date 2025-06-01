@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Hand clutch", "description": "Lever on the handlebar used to disengage the engine from the transmission." },
+  { "id": 2, "name": "Ignition switch", "description": "Switch used to start the motorcycle and activate the electrical system." },
+  { "id": 3, "name": "Instrument display", "description": "Dashboard showing speed, RPM, fuel level, and other indicators." },
+  { "id": 4, "name": "Frame", "description": "The structural backbone of the motorcycle that holds all components together." },
+  { "id": 5, "name": "Front fork", "description": "Front suspension system connecting the front wheel to the frame." },
+  { "id": 6, "name": "Front brakes", "description": "Braking system for the front wheel, typically using disc brakes." },
+  { "id": 7, "name": "Wheels & tires", "description": "The motorcycle’s wheels and tires — essential for grip and handling." },
+  { "id": 8, "name": "Foot shifter", "description": "Foot lever used to change gears on a manual transmission motorcycle." },
+  { "id": 9, "name": "Transmission", "description": "System of gears that transfers engine power to the drive system." },
+  { "id": 10, "name": "Engine", "description": "The motorcycle’s power source, converting fuel into motion." },
+  { "id": 11, "name": "Starter pedal", "description": "Pedal used to manually start older motorcycles (kick starter)." },
+  { "id": 12, "name": "Suspension", "description": "System that absorbs shocks and maintains stability." },
+  { "id": 13, "name": "Rear brakes", "description": "Braking system for the rear wheel." },
+  { "id": 14, "name": "Seat", "description": "The part of the motorcycle where the rider sits." },
+  { "id": 15, "name": "Fuel tank", "description": "Reservoir for storing the motorcycle’s fuel." }
+]

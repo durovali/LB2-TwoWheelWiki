@@ -6,3 +6,12 @@ body {
     height: 35px;
     width: 35px;
 }
+
+.spec-btn{
+border-color: blueviolet; color: blueviolet; background-color: white;
+}
+
+.spec-btn:hover{
+    background-color: blueviolet;
+    color: white;
+}

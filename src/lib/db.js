@@ -4,27 +4,42 @@ import { DB_URI } from "$env/static/private";
 const client = new MongoClient(DB_URI);
 
 await client.connect();
-const db = client.db("ScreenStackDB"); 
+const db = client.db("TwoWheelWiki"); 
 
-async function getMovies() {
-  let movies = [];
+async function getSpecs() {
+  let specs = [];
   try {
-    const collection = db.collection("movies");
+    const collection = db.collection("specs");
     const query = {};
-    movies = await collection.find(query).toArray();
-    movies.forEach((movie) => {
-      movie._id = movie._id.toString(); 
+    specs = await collection.find(query).toArray();
+    specs.forEach((spec) => {
+      spec._id = spec._id.toString(); 
     });
   } catch (error) {
     console.log(error);
   }
-  return movies;
+  return specs;
 }
 
-async function getMovie(id) {
-  let movie = null;
+async function getBikes() {
+  let bikes = [];
   try {
-    const collection = db.collection("movies");
+    const collection = db.collection("bikes");
+    const query = {};
+    bikes = await collection.find(query).toArray();
+    bikes.forEach((bike) => {
+      bike._id = bike._id.toString(); 
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  return bikes;
+}
+
+async function getBike(id) {
+  let bike = null;
+  try {
+    const collection = db.collection("bikes");
     const query = { _id: new ObjectId(id) };
     movie = await collection.findOne(query);
 
@@ -40,13 +55,40 @@ async function getMovie(id) {
   return movie;
 }
 
-async function createMovie(movie) {
-  movie.poster = "/images/placeholder.jpg";
-  movie.actors = [];
-  movie.watchlist = false;
+async function getManufacturers() {
+  let manufacturers = [];
   try {
-    const collection = db.collection("movies");
-    const result = await collection.insertOne(movie);
+    const collection = db.collection("manufacturers");
+    const query = {};
+    manufacturers = await collection.find(query).toArray();
+    manufacturers.forEach((manufacturer) => {
+      manufacturer._id = manufacturer._id.toString(); 
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  return manufacturers;
+}
+
+async function getTips() {
+  let tips = [];
+  try {
+    const collection = db.collection("riding_tips");
+    const query = {};
+    tips = await collection.find(query).toArray();
+    tips.forEach((tip) => {
+      tip._id = tip._id.toString(); 
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  return tips;
+}
+
+async function createTip(tip) {
+  try {
+    const collection = db.collection("riding_tips");
+    const result = await collection.insertOne(tip);
     return result.insertedId.toString();
   } catch (error) {
     console.log(error.message);
@@ -54,49 +96,11 @@ async function createMovie(movie) {
   return null;
 }
 
-async function updateMovie(movie) {
-  try {
-    let id = movie._id;
-    delete movie._id; 
-    const collection = db.collection("movies");
-    const query = { _id: new ObjectId(id) };
-    const result = await collection.updateOne(query, { $set: movie });
-
-    if (result.matchedCount === 0) {
-      console.log("No movie with id " + id);
-    } else {
-      console.log("Movie with id " + id + " has been updated.");
-      return id;
-    }
-  } catch (error) {
-    console.log(error.message);
-  }
-  return null;
-}
-
-async function deleteMovie(id) {
-  try {
-    const collection = db.collection("movies");
-    const query = { _id: new ObjectId(id) };
-    const result = await collection.deleteOne(query);
-
-    if (result.deletedCount === 0) {
-      console.log("No movie with id " + id);
-    } else {
-      console.log("Movie with id " + id + " has been successfully deleted.");
-      return id;
-    }
-  } catch (error) {
-    // TODO: errorhandling
-    console.log(error.message);
-  }
-  return null;
-}
-
 export default {
-  getMovies,
-  getMovie,
-  createMovie,
-  updateMovie,
-  deleteMovie,
+  getSpecs,
+  getBikes,
+  getBike,
+  getManufacturers,
+  getTips,
+  createTip,
 };

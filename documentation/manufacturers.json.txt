@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Honda",
+    "description": "Honda is one of the world's largest and most innovative motorcycle manufacturers. Known for their reliable engineering, broad model range, and technical innovations, Honda offers everything from beginner-friendly bikes to high-performance superbikes.",
+    "country": "Japan",
+    "founded": 1948,
+    "known_for": "Sport bikes, touring motorcycles, adventure bikes, scooters",
+    "logo": "/images/logos/honda.png"
+  },
+  {
+    "id": 2,
+    "name": "Kawasaki",
+    "description": "Kawasaki is a legendary Japanese motorcycle brand recognized for its powerful engines and racing heritage. The brand is popular among sport riders and performance enthusiasts, with models ranging from nimble sport bikes to high-capacity touring machines.",
+    "country": "Japan",
+    "founded": 1896,
+    "known_for": "High-performance sport bikes, supersport, adventure, touring",
+    "logo": "/images/logos/kawasaki.png"
+  },
+  {
+    "id": 3,
+    "name": "Yamaha",
+    "description": "Yamaha is a highly versatile motorcycle manufacturer with a rich history in motorsport and consumer motorcycles. Yamaha is known for its innovation, handling-focused designs, and a wide range of bikes for all experience levels.",
+    "country": "Japan",
+    "founded": 1955,
+    "known_for": "Sport bikes, adventure bikes, cruisers, scooters, off-road",
+    "logo": "/images/logos/yamaha.png"
+  },
+  {
+    "id": 4,
+    "name": "Suzuki",
+    "description": "Suzuki produces a well-balanced lineup of motorcycles, from practical commuters to high-performance machines. The company is known for affordable, reliable bikes that offer great value and versatility.",
+    "country": "Japan",
+    "founded": 1909,
+    "known_for": "Sport bikes, adventure bikes, dual-sport, street motorcycles",
+    "logo": "/images/logos/suzuki.png"
+  },
+  {
+    "id": 5,
+    "name": "BMW Motorrad",
+    "description": "BMW Motorrad is the motorcycle division of BMW, known for premium touring and adventure motorcycles. BMW bikes often feature advanced electronics, comfort features, and a focus on long-distance riding and performance.",
+    "country": "Germany",
+    "founded": 1923,
+    "known_for": "Adventure bikes, touring motorcycles, sport-touring, luxury motorcycles",
+    "logo": "/images/logos/bmw.png"
+  },
+  {
+    "id": 6,
+    "name": "Ducati",
+    "description": "Ducati is an iconic Italian motorcycle brand famed for its design, performance, and racing heritage. Known for powerful V-twin engines and distinctive styling, Ducati bikes appeal to enthusiasts and sport riders alike.",
+    "country": "Italy",
+    "founded": 1926,
+    "known_for": "Superbikes, naked bikes, sport-touring, racing motorcycles",
+    "logo": "/images/logos/ducati.png"
+  },
+  {
+    "id": 7,
+    "name": "Triumph",
+    "description": "Triumph is a British motorcycle manufacturer known for blending classic design with modern performance. The brand is particularly well-regarded for its stylish roadsters, adventure bikes, and iconic retro-inspired models.",
+    "country": "United Kingdom",
+    "founded": 1902,
+    "known_for": "Modern classics, roadsters, adventure bikes, cruisers",
+    "logo": "/images/logos/triumph.png"
+  },
+  {
+    "id": 8,
+    "name": "Harley-Davidson",
+    "description": "Harley-Davidson is an iconic American motorcycle manufacturer famous for its heavyweight cruisers, distinctive V-twin engines, and strong community culture. Harley motorcycles are synonymous with freedom and long-distance cruising.",
+    "country": "United States",
+    "founded": 1903,
+    "known_for": "Cruisers, touring motorcycles, custom bikes",
+    "logo": "/images/logos/harley-davidson.png"
+  },
+  {
+    "id": 9,
+    "name": "KTM",
+    "description": "KTM is an Austrian motorcycle manufacturer that has become a leader in off-road and adventure motorcycling. KTM bikes are known for their light weight, aggressive performance, and success in motocross and rally competitions.",
+    "country": "Austria",
+    "founded": 1934,
+    "known_for": "Off-road motorcycles, enduro, motocross, adventure motorcycles",
+    "logo": "/images/logos/ktm.png"
+  },
+  {
+    "id": 10,
+    "name": "Royal Enfield",
+    "description": "Royal Enfield is one of the oldest motorcycle brands in continuous production, known for classic-styled motorcycles with simple, rugged engineering. The brand appeals to retro enthusiasts and riders seeking a timeless riding experience.",
+    "country": "India",
+    "founded": 1901,
+    "known_for": "Classic motorcycles, cruisers, modern retro bikes",
+    "logo": "/images/logos/royal-enfield.png"
+  }
+]
